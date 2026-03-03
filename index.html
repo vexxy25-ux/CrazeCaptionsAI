@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Craze Captions AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    font-family: Inter, Arial, sans-serif;
+    background: linear-gradient(135deg,#0f0f14,#1a1a25);
+    color: white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+  }
+
+  .container {
+    background:#181824;
+    padding:32px;
+    border-radius:18px;
+    width:460px;
+    box-shadow:0 25px 60px rgba(0,0,0,.55);
+    text-align:center;
+  }
+
+  h1 {
+    margin:0 0 6px 0;
+    font-size:26px;
+  }
+
+  .sub {
+    opacity:.7;
+    font-size:14px;
+    margin-bottom:18px;
+  }
+
+  select {
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+    margin-bottom:12px;
+    font-size:14px;
+    background:#101018;
+    color:white;
+  }
+
+  button {
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    border:none;
+    border-radius:12px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.18s ease;
+  }
+
+  button:hover {
+    transform:translateY(-2px);
+  }
+
+  .gen-btn {
+    background:linear-gradient(135deg,#ff2e88,#ff6b6b);
+    color:white;
+  }
+
+  .copy-btn {
+    background:#2a2a3a;
+    color:white;
+  }
+
+  .pro-btn {
+    background:linear-gradient(135deg,#7c5cff,#b794ff);
+    color:white;
+  }
+
+  #output {
+    background:#0e0e16;
+    border-radius:12px;
+    padding:18px;
+    margin-top:18px;
+    min-height:130px;
+    white-space:pre-wrap;
+    text-align:left;
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .badge {
+    margin-top:10px;
+    font-size:12px;
+    opacity:.65;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Craze Captions AI</h1>
+  <div class="sub">Pick your niche → generate → go viral</div>
+
+  <select id="category">
+    <option value="auto">🔥 Auto (Best)</option>
+    <option value="booktok">📚 BookTok</option>
+    <option value="horror">👻 HorrorTok</option>
+    <option value="ai">🤖 AI & Side Hustle</option>
+    <option value="glowup">✨ Glow Up</option>
+    <option value="creator">📈 Creator Growth</option>
+  </select>
+
+  <button class="gen-btn" onclick="generateBio()">Generate Viral Caption</button>
+  <button class="copy-btn" onclick="copyBio()">Copy Caption</button>
+  <button class="pro-btn" onclick="unlockPro()">⭐ Upgrade to Pro — $5/mo</button>
+
+  <div id="output">Click generate to begin…</div>
+  <div class="badge">⚡ 5 free uses every 24 hours</div>
+<script>
+function unlockPro(){
+  window.location.href = "https://buy.stripe.com/eVqbJ37WiauIgrS45L4Ni00";
+}
+</script>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
